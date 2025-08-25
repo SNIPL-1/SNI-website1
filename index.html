@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SNI Pvt Ltd</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">SNI Pvt Ltd</div>
+      <ul>
+        <li><a href="#showcase">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Showcase / Rotating Slider -->
+  <section id="showcase" class="showcase">
+    <div class="slider">
+      <div class="slides">
+        <img src="https://via.placeholder.com/1200x400?text=Product+1" class="slide active">
+        <img src="https://via.placeholder.com/1200x400?text=Product+2" class="slide">
+        <img src="https://via.placeholder.com/1200x400?text=Product+3" class="slide">
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="section">
+    <h2>Products</h2>
+    <div id="categories" class="grid"></div>
+    <div id="products-list" class="grid hidden"></div>
+    <div id="product-detail" class="hidden"></div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <div id="about-content"></div>
+  </section>
+
+  <!-- Contact / Inquiry -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Email: <span id="contact-email"></span></p>
+    <p>Phone: <span id="contact-phone"></span></p>
+
+    <h3>Send an Inquiry</h3>
+    <form id="inquiry-form">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <input type="tel" id="mobile" placeholder="Your Mobile Number" pattern="[0-9]{10}" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="form-status"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 SNI Pvt Ltd. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
